@@ -88,10 +88,10 @@ export class StorageSubsystem {
   }
 
   save(documentId: DocumentId, doc: Automerge.Doc<unknown>) {
-    if (this.shouldCompact(documentId)) {
+    //if (this.shouldCompact(documentId)) {
       this.saveTotal(documentId, doc)
-    } else {
-      this.saveIncremental(documentId, doc)
-    }
+    //} else {
+      //this.saveIncremental(documentId, doc)
+    //}
   }
 }

@@ -9,10 +9,12 @@
   },
   "dependencies": {
     "@automerge/automerge": "^2.0.1-alpha.1",
-    "automerge-repo": "*",
-    "automerge-repo-network-websocket": "*",
-    "automerge-repo-storage-nodefs": "*",
+    "automerge-repo": "workspace:*",
+    "automerge-repo-network-websocket": "workspace:*",
+    "automerge-repo-storage-nodefs": "workspace:*",
+    "automerge-repo-storage-sqlite": "workspace:packages/automerge-repo-storage-sqlite",
     "express": "^4.18.1",
+    "sqlite3": "^5.1.4",
     "ws": "^8.7.0"
   },
   "devDependencies": {

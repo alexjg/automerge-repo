@@ -1,0 +1,29 @@
+{
+  "name": "automerge-repo-storage-sqlite",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "automerge-repo": "*",
+    "sqlite3": "^5.1.4"
+  },
+  "devDependencies": {
+    "@types/mocha": "^9.1.1",
+    "mocha": "^10.0.0",
+    "npm-watch": "^0.11.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "npm-watch",
+    "test": "mocha --no-warnings --experimental-specifier-resolution=node"
+  },
+  "watch": {
+    "build": {
+      "patterns": "./src/**/*",
+      "extensions": [
+        ".ts"
+      ]
+    }
+  }
+}
