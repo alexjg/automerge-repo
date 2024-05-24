@@ -56,7 +56,7 @@
  *  * @packageDocumentation
  **/
 
-import type { ChangeFn, Doc } from "@automerge/automerge/next"
+import type { ChangeFn, Doc } from "@automerge/automerge/slim/next"
 import {
   AutomergeUrl,
   DocHandleChangePayload,
