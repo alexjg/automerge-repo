@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@automerge/automerge':
-        specifier: ^2.1.13
-        version: 2.1.13
+        specifier: 2.2.3-packaging-revamp.3
+        version: 2.2.3-packaging-revamp.3
       '@manypkg/cli':
         specifier: ^0.21.3
         version: 0.21.3
@@ -277,8 +277,8 @@ importers:
   packages/automerge-repo:
     dependencies:
       '@automerge/automerge':
-        specifier: ^2.1.13
-        version: 2.1.13
+        specifier: 2.2.3-packaging-revamp.3
+        version: 2.2.3-packaging-revamp.3
       bs58check:
         specifier: ^3.0.1
         version: 3.0.1
@@ -356,8 +356,8 @@ importers:
   packages/automerge-repo-react-hooks:
     dependencies:
       '@automerge/automerge':
-        specifier: ^2.1.13
-        version: 2.1.13
+        specifier: 2.2.3-packaging-revamp.3
+        version: 2.2.3-packaging-revamp.3
       '@automerge/automerge-repo':
         specifier: workspace:*
         version: link:../automerge-repo
@@ -443,11 +443,18 @@ packages:
 
   /@automerge/automerge-wasm@0.12.0:
     resolution: {integrity: sha512-MJVmw/83Uy7WuqA9Dac3VcLXpXENZSDu7hqxttdFyAYZXQYQugiU7R+RUO2sP7081J9gRUb2+73sYpNnSTwzYQ==}
+    dev: false
 
   /@automerge/automerge@2.1.13:
     resolution: {integrity: sha512-9t185MgkFvwvqccmA45yKq61If2KCpKxZg19gukwO9G15bvxuh5ulWv2PWvMZ+iTvhDYCH+pZwXmFkD4nufScw==}
     dependencies:
       '@automerge/automerge-wasm': 0.12.0
+      uuid: 9.0.1
+    dev: false
+
+  /@automerge/automerge@2.2.3-packaging-revamp.3:
+    resolution: {integrity: sha512-tj4sQ5pD/GllEaC/Hs5v+2PscswiocPDFGWxhT5Htl7tWw48cFXJ7X+U69ILX/KFnsiNxXiEKjOR1/YujSINFA==}
+    dependencies:
       uuid: 9.0.1
 
   /@babel/code-frame@7.24.2:
@@ -5028,7 +5035,7 @@ packages:
     resolution: {integrity: sha512-PmDi3uwK5nFuXh7XDTlVnS17xJS7vW36is2+w3xcv8SVxiB4NyATf4ctkVY5bkSjX0Y4nbvZCq1/EjtEyr9ktw==}
     engines: {node: '>=14.14'}
     dependencies:
-      graceful-fs: 4.2.10
+      graceful-fs: 4.2.11
       jsonfile: 6.1.0
       universalify: 2.0.1
     dev: true
@@ -6265,7 +6272,7 @@ packages:
     dependencies:
       universalify: 2.0.1
     optionalDependencies:
-      graceful-fs: 4.2.10
+      graceful-fs: 4.2.11
     dev: true
 
   /jsonparse@1.3.1:

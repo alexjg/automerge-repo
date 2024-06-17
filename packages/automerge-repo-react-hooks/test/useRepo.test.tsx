@@ -3,6 +3,10 @@ import { render } from "@testing-library/react"
 import React from "react"
 import { describe, expect, test, vi } from "vitest"
 import { RepoContext, useRepo } from "../src/useRepo.js"
+import { next as A } from "@automerge/automerge"
+
+// Do something with 'next' so that it isn't compiled away
+A.init()
 
 describe("useRepo", () => {
   const Component = ({ onRepo }: { onRepo: (repo: Repo) => void }) => {

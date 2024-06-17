@@ -94,7 +94,7 @@ export type {
 export * from "./types.js"
 
 // export commonly used data types
-export { Counter, RawString } from "@automerge/automerge/next"
+export { Counter, RawString } from "@automerge/automerge/slim/next"
 
 // export some automerge API types
 export type {
@@ -111,7 +111,7 @@ export type {
   MarkRange,
   MarkValue,
   Cursor,
-} from "@automerge/automerge/next"
+} from "@automerge/automerge/slim/next"
 
 // export a few utility functions that aren't in automerge-repo
 // NB that these should probably all just be available via the dochandle
@@ -121,7 +121,7 @@ export {
   applyChanges,
   view,
   getConflicts,
-} from "@automerge/automerge/next"
+} from "@automerge/automerge/slim/next"
 
 // export type-specific utility functions
 // these mostly can't be on the data-type in question because
@@ -135,4 +135,4 @@ export {
   deleteAt,
   mark,
   unmark,
-} from "@automerge/automerge/next"
+} from "@automerge/automerge/slim/next"

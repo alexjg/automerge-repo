@@ -1,7 +1,12 @@
+import * as A from "@automerge/automerge/next"
 import assert from "assert"
 import { beforeEach, describe, it } from "vitest"
 import { PeerId, Repo, SyncMessage } from "../src/index.js"
 import { CollectionSynchronizer } from "../src/synchronizer/CollectionSynchronizer.js"
+
+// required so the the import of automerge/next doesn't get elided, which
+// forces the wasm to be loaded
+const _ = A.init()
 
 describe("CollectionSynchronizer", () => {
   let repo: Repo

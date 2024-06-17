@@ -1,3 +1,4 @@
+import React from "react"
 import {
   AutomergeUrl,
   DocHandle,
@@ -6,10 +7,13 @@ import {
 } from "@automerge/automerge-repo"
 import { DummyStorageAdapter } from "@automerge/automerge-repo/test/helpers/DummyStorageAdapter"
 import { render, waitFor } from "@testing-library/react"
-import React from "react"
 import { describe, expect, it, vi } from "vitest"
 import { useHandle } from "../src/useHandle"
 import { RepoContext } from "../src/useRepo"
+
+import { next as A } from "@automerge/automerge"
+// Do something with 'next' so that it isn't compiled away
+const someDoc = A.init()
 
 interface ExampleDoc {
   foo: string

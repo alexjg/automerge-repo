@@ -15,6 +15,9 @@ import { TestDoc } from "./types.js"
 const alice = "alice" as PeerId
 const bob = "bob" as PeerId
 const charlie = "charlie" as PeerId
+// We have to do this to force the import of '@automerge/automerge' to be run,
+// and that has the side effect of initializing the wasm bundle
+const _ = A.init()
 
 describe("DocSynchronizer", () => {
   let handle: DocHandle<TestDoc>
